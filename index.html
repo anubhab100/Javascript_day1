@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JSON DATA DISPLAYING.</h2>
+    <input type="text" id="json" name="jsondata">
+    <p id="data"></p>
+    <script type="text/javascript">
+        fetch('./Tenants.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+
+                console.log(data);
+                //  for ( var i = 0; i < data.length; i++) {
+                //     document.getElementById("data").innerHTML +=
+                //         data[i].tenantId + "=>" + data[i].tenantName + "" + data[i].storeNumbers + "<br/>";
+                //  }
+                for (var i = 0, l = data.tenantList.length; i < l; i++) {
+                    var obj = data.tenantList[i];
+                    document.getElementById("data").innerHTML +=
+                        "tenantId :" + data.tenantList[i].tenantId + "tenantName:" + data.tenantList[i].tenantName + "storeNumbers:" + data.tenantList[i].storeNumbers + "<br/>";
+                }
+            })
+            .catch(function (err) {
+                console.log(err);
+            });
+
+    </script>
+
+
+
+</body>
+
+</html>

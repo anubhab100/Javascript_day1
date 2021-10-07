@@ -1,0 +1,142 @@
+{
+    "tenantList": [
+        {
+            "tenantId": "stanford",
+            "tenantName": "High Hill Academy",
+            "storeNumbers": [
+                "404"
+            ]
+        },
+        {
+            "tenantId": "ivytech",
+            "tenantName": "Ivy Tech Community College",
+            "storeNumbers": [
+                "8314",
+                "8324",
+                "8310"
+            ]
+        },
+        {
+            "tenantId": "T1",
+            "tenantName": "University of T1",
+            "storeNumbers": [
+                "0130"
+            ]
+        },
+        {
+            "tenantId": "T2",
+            "tenantName": "University of T2",
+            "storeNumbers": [
+                "0515"
+            ]
+        },
+        {
+            "tenantId": "T12",
+            "tenantName": "University of T12",
+            "storeNumbers": [
+                "106"
+            ]
+        },
+        {
+            "tenantId": "T4",
+            "tenantName": "University of T4",
+            "storeNumbers": [
+                "2000-1"
+            ]
+        },
+        {
+            "tenantId": "T5",
+            "tenantName": "university of T5",
+            "storeNumbers": [
+                "8046"
+            ]
+        },
+        {
+            "tenantId": "T6",
+            "tenantName": "University of T6",
+            "storeNumbers": [
+                "327"
+            ]
+        },
+        {
+            "tenantId": "T7",
+            "tenantName": "University of T7",
+            "storeNumbers": [
+                "507-1"
+            ]
+        },
+        {
+            "tenantId": "T8",
+            "tenantName": "University of T8",
+            "storeNumbers": [
+                "515"
+            ]
+        },
+        {
+            "tenantId": "T9",
+            "tenantName": "University of T9",
+            "storeNumbers": [
+                "509-1"
+            ]
+        },
+        {
+            "tenantId": "T10",
+            "tenantName": "University of T10",
+            "storeNumbers": [
+                "2838"
+            ]
+        },
+        {
+            "tenantId": "ccc",
+            "tenantName": "City Colleges of Chicago",
+            "storeNumbers": [
+                "4486"
+            ]
+        },
+        {
+            "tenantId": "alfred",
+            "tenantName": "Alfred University",
+            "storeNumbers": [
+                "549"
+            ]
+        },
+        {
+            "tenantId": "Ju",
+            "tenantName": "Jacksonville Universityy",
+            "storeNumbers": [
+                "8309"
+            ]
+        },
+        {
+            "tenantId": "T11",
+            "tenantName": "University of T11",
+            "storeNumbers": [
+                "105O",
+                "105X"
+            ]
+        },
+        {
+            "tenantId": "spokane",
+            "tenantName": "Community Colleges of Spokane",
+            "storeNumbers": [
+                "8139",
+                "8140"
+            ]
+        },
+        {
+            "tenantId": "aims",
+            "tenantName": "AIMS Community College",
+            "storeNumbers": [
+                "8107"
+            ]
+        },
+        {
+            "tenantId": "famu",
+            "tenantName": "Florida A&M University",
+            "storeNumbers": [
+                "753",
+                "616"
+            ]
+        }
+    ]
+}
