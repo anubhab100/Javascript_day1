@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JSON DATA DISPLAYING.</h2>
+    <input type="text" name="search" id="searchField" />
+    <button onclick="getInput()">GET DATA!</button>
+    <button onclick="filterdata()">SEARCH DATA!</button>
+    <p id="data"></p>
+    <p id="filter"> </p>
+
+
+    <script>
+        var output = [];
+        var inputvalue = [];
+        var filteredtenants = [];
+        var requireddata;
+        //function to take user input
+        function getInput() {
+            var userInput = document.getElementById('searchField').value;
+            console.log(userInput);
+            return userInput;
+        }
+
+        //function for filtering the data
+        function filterdata() {
+            var inputvalue = getInput();
+            filteredtenants = output.filter((searchdata) => {
+                if (searchdata.includes(inputvalue)) {
+                    console.log(searchdata);
+                    return searchdata;
+                }
+            })
+
+            requireddata = filteredtenants.map(item => ({
+                tenantName: item.tenantName,
+            }));
+            document.getElementById("filter").innerHTML += filteredtenants;
+        }
+        //fetching data from JSON file
+        fetch('./Tenants.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+
+                output = data.tenantList.map(obj => {
+                    return [obj.tenantId, obj.tenantName, obj.storeNumbers]
+                });
+                document.getElementById("data").innerHTML += output;
+
+            })
+            .catch(function (err) {
+                console.log(err);
+            });
+
+    </script>
+
+
+
+</body>
+
+</html>
